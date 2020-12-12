@@ -12,15 +12,13 @@ def insertion_sort(arr: list):
 		arr[j+1] = key
 
 
-"""
-def two_pair_k_sum(arr: list, k: int):
+def two_entries_k_sum(arr: list, k: int):
 	for num1 in arr:
 		if k-num1 in arr:
 			return num1, k-num1
-"""
 
 
-def n_pair_k_sum(arr: list, n: int, k: int):
+def three_entries_k_sum(arr: list, k: int):
 	for i in range(len(arr)):
 		for j in range(i, len(arr)):
 			if k-(arr[i] + arr[j]) in arr:
@@ -35,12 +33,12 @@ def main():
 
 	insertion_sort(lines)
 
-	# num1, num2 = two_pair_k_sum(lines, 2020)
-	# print(f'num1: {num1}, num2: {num2} | product: {num1*num2}')
+	num1, num2 = two_entries_k_sum(lines, 2020)
+	print(f'num1: {num1}, num2: {num2} | product: {num1*num2}')
 	
 	# output: "num1: 947, num2: 1073 | product: 1016131"
 
-	num1, num2, num3 = three_pair_k_sum(lines 2020)
+	num1, num2, num3 = three_entries_k_sum(lines, 2020)
 	print(f'num1: {num1}, num2: {num2} , num3: {num3} | product: {num1*num2*num3}')
 
 	# output: "num1: 491, num2: 618 , num3: 911 | product: 276432018"
