@@ -2,7 +2,7 @@
 Programming challenges for the month of December
 
 # Completed Challenges
-2
+3
 
 # Advent of Code Website
 https://adventofcode.com/
