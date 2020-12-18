@@ -1,6 +1,3 @@
-#!/usr/bin/python3.8
-
-
 # non-decreasing insertion sort
 def insertion_sort(arr: list):
 	for i in range(len(arr)):
