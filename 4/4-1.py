@@ -1,6 +1,14 @@
 """
-Count the number of valid passports - those that have all required fields. 
-Treat cid as optional.
+Count the number of valid passports - those that have all required fields.
+
+byr (Birth Year)
+iyr (Issue Year)
+eyr (Expiration Year)
+hgt (Height)
+hcl (Hair Color)
+ecl (Eye Color)
+pid (Passport ID)
+cid (Country ID) - cid (Country ID) - ignored, missing or not.
 """
 
 import re
